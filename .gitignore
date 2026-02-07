@@ -1,0 +1,38 @@
+# Terraform
+# Local .terraform directories (plugins)
+**/.terraform/*
+
+# .tfstate files (CRITICAL: Never commit these!)
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files (Likely to contain passwords/keys)
+*.tfvars
+*.tfvars.json
+
+# Ignore override files as they are usually local configurations
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI Config files
+.terraformrc
+terraform.rc
+
+# AWS / Security
+# Credential files
+*.pem
+*.creds
+
+# OS / Editor 
+.DS_Store
+.idea/
+.vscode/
+
+# --- Keep these files (Do NOT ignore) ---
+#!.terraform.lock.hcl  <-- We keep this to lock provider versions

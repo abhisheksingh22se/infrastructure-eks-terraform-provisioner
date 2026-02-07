@@ -1,7 +1,7 @@
 # This data block constructs the Trust Policy dynamically
 data "aws_iam_policy_document" "irsa_trust" {
     statement {
-      actions = ["sts:AssumeRoleWithIdentity"]
+      actions = ["sts:AssumeRoleWithWebIdentity"]
 
       principals {
         type = "Federated"
